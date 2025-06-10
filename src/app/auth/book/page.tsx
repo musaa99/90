@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic';
 
 export const metadata: Metadata = {
   title: 'Onboarding',
-  description: 'Welcome! Choose your role and get started.',
+  description: 'Welcome!',
 };
 
 const Onboarding = dynamic(() => import('@/screens/auth/onboarding'));
