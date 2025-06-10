@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     template: '%s | Ninty',
     default: 'Ninty',
   },
-  description: 'Your smart health companion',
+  description: 'Your companion',
   applicationName: 'Ninty Web',
   creator: 'Ninty Team',
   // metadataBase: new URL('https://base_url'),
@@ -72,7 +72,7 @@ export default function RootLayout({
     <html lang="en" className="w-full scroll-pt-40 scroll-smooth">
       <body
         suppressHydrationWarning={true}
-        className={`${googleSans.className} ${arial.variable} h-screen min-h-dvh w-full`}
+        className={`${googleSans.className} ${arial.variable} h-screen min-h-dvh w-full bg-[#f0f9fb]`}
       >
         <DynamicReduxProvider>
           {children}
