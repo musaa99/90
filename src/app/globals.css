@@ -1,0 +1,67 @@
+@import 'tailwindcss';
+
+@plugin "tailwindcss-animate";
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --breakpoint-2md: 56.25rem;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-google-sans: var(--font-google-sans);
+  --font-arial: var(--font-arial);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-primary-hovered: var(--primary-hovered);
+  --color-card: var(--card);
+  --color-header-text: var(--header-text);
+  --color-body-text-1: var(--body-text-1);
+  --color-body-text-2: var(--body-text-2);
+  --color-icon-background: var(--icon-background);
+  --color-error-red-2: var(--error-red-2);
+  --color-error-light-red: var(--error-light-red);
+  --color-warning-mustard: var(--warning-mustard);
+  --color-warning-mustard-light: var(--warning-mustard-light);
+  --color-success-green: var(--success-green);
+  --color-success-faded-green: var(--success-faded-green);
+  --color-success-light-green: var(--success-light-green);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --inset-shadow-sidebar:
+    inset 0.6px 0.6px rgba(9, 85, 183, 0.1),
+    inset -0.6px -0.6px rgba(9, 85, 183, 0.1);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-google-sans);
+  color: var(--header-text);
+}
