@@ -9,22 +9,17 @@ import X from '@/assets/x.svg';
 import telegram from '@/assets/telegram.svg';
 import whatsapp from '@/assets/whatsapp.svg';
 
-const WagerCard = () => {
+const SettleCard = () => {
   return (
     <section className="flex h-[-webkit-fill-available] w-full flex-col items-center space-y-6 p-4">
       <Card className="w-full max-w-md text-sm">
         <CardContent className="space-y-4 p-6">
           <div className="text-center">
-            <p className="text-xs font-semibold">
-              {' '}
-              <span className="text-orange-500">●</span> WAGER BOOKED
-            </p>
-            <p className="text-muted-foreground text-xs">
-              Awaiting second party
-            </p>
+            <p className="text-xs font-semibold">WAGER Won</p>
+            <p className="text-green text-xs">You called it</p>
           </div>
 
-          <div className="space-y-1">
+          <div className="space-y-1 text-center">
             <p className="text-xs font-semibold text-gray-600">
               WAGER CONDITION
             </p>
@@ -32,7 +27,7 @@ const WagerCard = () => {
               “Mbappe to score in the second half ”
             </p>
           </div>
-          <div className="flex justify-between space-x-4">
+          <div className="flex flex-col justify-between space-x-4 gap-y-3">
             <div className="space-y-1">
               <h1>For:</h1>
               <p className="text-xs font-semibold text-gray-600">
@@ -48,6 +43,10 @@ const WagerCard = () => {
               </p>
               <p className="text-base font-medium text-black">250 USDC</p>
               <span className="font-medium text-gray-900">@username1</span>
+            </div>
+            <div className="flex-1 space-y-1">
+              <h1>Total Stake:</h1>
+              <p className="text-xs font-semibold text-gray-600">500 USDC</p>
             </div>
           </div>
         </CardContent>
@@ -96,4 +95,4 @@ const WagerCard = () => {
     </section>
   );
 };
-export default WagerCard;
+export default SettleCard;
