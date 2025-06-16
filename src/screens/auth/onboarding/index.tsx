@@ -1,5 +1,4 @@
 'use client';
-import Header from '@/components/shared/header';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
@@ -9,7 +8,6 @@ const Onboarding = () => {
 
   return (
     <>
-      <Header />
       <section className="flex h-[-webkit-fill-available] w-full flex-col items-center space-y-6 p-4">
         <main className="flex w-full flex-col items-center justify-center space-y-10">
           <div className="space-y-2 text-center">

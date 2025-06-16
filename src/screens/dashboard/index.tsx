@@ -7,7 +7,6 @@ import { Form } from '@/components/ui/form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { WagerSchema, WagerValidation } from '@/libs/validations/auth';
-import Header from '@/components/shared/header';
 
 const Dashboard = () => {
   const form = useForm<WagerValidation>({
@@ -24,7 +23,6 @@ const Dashboard = () => {
 
   return (
     <>
-      <Header />
       <section className="flex h-[-webkit-fill-available] w-full flex-col items-center p-4">
         <main className="border-ash-300 flex w-full max-w-md flex-col items-center space-y-6 rounded-sm border bg-white p-2">
           <h1 className="text-lg font-bold">Book Wager</h1>

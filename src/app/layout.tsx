@@ -4,6 +4,7 @@ import localFont from 'next/font/local';
 import './globals.css';
 import dynamic from 'next/dynamic';
 import { Toaster } from '@/components/ui/sonner';
+import Header from '@/components/shared/header';
 
 const DynamicReduxProvider = dynamic(() => import('@/store/StoreProvider'));
 
@@ -75,6 +76,7 @@ export default function RootLayout({
         className={`${googleSans.className} ${arial.variable} h-screen min-h-dvh w-full bg-[#f0f9fb]`}
       >
         <DynamicReduxProvider>
+          <Header />
           {children}
           <Toaster position="top-center" closeButton richColors theme="light" />
         </DynamicReduxProvider>
