@@ -11,8 +11,6 @@ const initialState: AuthState = {
   accessToken: null,
   refreshToken: null,
   resetToken: null,
-  phoneNumber: null,
-  userId: null,
 };
 
 const authSlice = createSlice({
@@ -34,14 +32,7 @@ const authSlice = createSlice({
       ...state,
       resetToken: action.payload.resetToken,
     }),
-    setPhoneNumber: (state, action) => ({
-      ...state,
-      phoneNumber: action.payload,
-    }),
-    setUserId: (state, action) => ({
-      ...state,
-      userId: action.payload,
-    }),
+
     logout: () => {
       sessionStorage.clear();
       return initialState;
@@ -53,14 +44,11 @@ export const {
   logout,
   setCurrentUser,
   setResetToken,
-  setPhoneNumber,
-  setUserId,
+
   tokenReceived,
 } = authSlice.actions;
 
 export const selectResetToken = (state: RootState) => state.auth.resetToken;
-export const selectPhoneNumber = (state: RootState) => state.auth.phoneNumber;
-export const selectUserId = (state: RootState) => state.auth.userId;
 
 const persistConfig = {
   key: 'auth',

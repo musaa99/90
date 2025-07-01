@@ -73,11 +73,11 @@ export default function RootLayout({
     <html lang="en" className="w-full scroll-pt-40 scroll-smooth">
       <body
         suppressHydrationWarning={true}
-        className={`${googleSans.className} ${arial.variable} h-screen min-h-dvh w-full bg-[#f0f9fb]`}
+        className={`${googleSans.className} ${arial.variable} flex h-screen w-full flex-col overflow-hidden bg-gradient-to-b from-[#C7D2FE] to-[#ECF5F5]`}
       >
         <DynamicReduxProvider>
           <Header />
-          {children}
+          <main className="h-screen flex-grow">{children}</main>
           <Toaster position="top-center" closeButton richColors theme="light" />
         </DynamicReduxProvider>
       </body>
