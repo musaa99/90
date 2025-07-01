@@ -7,7 +7,7 @@ const Onboarding = () => {
   const router = useRouter();
 
   return (
-    <section className="flex w-full flex-col items-center justify-center p-2 md:flex-row lg:pt-4">
+    <section className="flex h-screen w-full flex-col items-center justify-center p-2 md:flex-row">
       <main className="flex w-full max-w-7xl flex-col items-center justify-center space-y-8 lg:space-y-10">
         <div className="space-y-3 text-center">
           <h1 className="text-2xl font-bold lg:text-4xl" id="hero-title">
