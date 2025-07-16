@@ -1,5 +1,6 @@
 'use client';
 import { Button } from '@/components/ui/button';
+import Dashboard from '@/screens/dashboard';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
@@ -7,16 +8,17 @@ const Onboarding = () => {
   const router = useRouter();
 
   return (
-    <section className="flex h-auto w-full flex-col items-center justify-center p-2 md:flex-row">
+    <section className="mt-6 flex h-auto w-full flex-col items-center justify-center p-2 md:flex-row">
       <main className="flex w-full max-w-7xl flex-col items-center justify-center space-y-8 lg:space-y-10">
         <div className="space-y-3 text-center">
-          <h1 className="text-2xl font-bold lg:text-4xl" id="hero-title">
-            Turn your Hot Takes into Cashouts
+          <h1 className="text-3xl font-[500] lg:text-4xl" id="hero-title">
+            Wager on Your Takes
           </h1>
           <p className="mx-auto max-w-lg text-sm text-gray-500 lg:text-base">
             Settle peer-to-peer bets on live sports events with in-play wagers
           </p>
         </div>
+        <Dashboard />
 
         <Button
           onClick={() => router.push('/dashboard')}
@@ -29,7 +31,7 @@ const Onboarding = () => {
           <input
             type="text"
             placeholder="Paste wager link to join"
-            className="flex-1 p-3 text-sm focus:outline-none lg:p-4 lg:text-base"
+            className="flex-1 p-3 text-[16px] focus:outline-none lg:p-4 lg:text-base"
             aria-label="Paste wager link to join"
           />
           <button className="h-full bg-gray-200 px-4 py-2 text-sm font-medium text-gray-800 transition-colors hover:bg-gray-300 lg:px-6 lg:text-base">

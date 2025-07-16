@@ -5,7 +5,7 @@ import { Button } from '../ui/button';
 
 const Header = () => {
   return (
-    <div className="max-w-auto m-auto flex w-full flex-row items-center justify-between bg-white p-4 lg:p-6">
+    <div className="max-w-auto m-auto flex w-full flex-row items-center justify-between bg-white px-4 py-2 lg:p-6">
       <Image
         src="/logo.svg"
         width={40}

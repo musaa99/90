@@ -70,14 +70,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="w-full scroll-pt-40 scroll-smooth">
+    <html lang="en" className="w-full scroll-smooth">
       <body
         suppressHydrationWarning={true}
-        className={`${googleSans.className} ${arial.variable} flex h-screen w-full flex-col overflow-hidden bg-gradient-to-b from-[#C7D2FE] to-[#ECF5F5]`}
+        className={`${googleSans.className} ${arial.variable} flex h-screen w-full flex-col bg-gradient-to-b from-[#edf5f5] to-[#edf5f5]`}
       >
         <DynamicReduxProvider>
-          <Header />
-          <main className="h-screen flex-grow">{children}</main>
+          <div className="fixed top-0 left-0 z-50 w-full md:relative">
+            <Header />
+          </div>
+          <main className="mt-16 h-screen flex-grow overflow-y-auto scroll-smooth">
+            {children}
+          </main>
           <Toaster position="top-center" closeButton richColors theme="light" />
         </DynamicReduxProvider>
       </body>

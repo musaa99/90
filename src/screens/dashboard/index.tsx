@@ -29,8 +29,8 @@ const Dashboard = () => {
     <>
       <section className="flex h-[-webkit-fill-available] w-full flex-col items-center p-4">
         <Card className="w-full max-w-md text-sm">
-          <CardContent className="space-y-4 p-6">
-            <h1 className="text-lg font-bold">Book Wager</h1>
+          <CardContent className="space-y-4 p-2">
+            <h1 className="text-center text-[24px] font-bold">Book Wager</h1>
 
             <div className="flex w-full justify-between p-4">
               <div className="">
