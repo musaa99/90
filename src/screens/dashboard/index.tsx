@@ -58,6 +58,7 @@ const Dashboard = () => {
                   label="Wager Condition"
                   placeholder="Enter wager condition"
                   type="text"
+                  className="flex-1 p-3 text-[16px] focus:outline-none lg:p-4 lg:text-base"
                   required={true}
                 />
                 <FormInput
@@ -65,6 +66,7 @@ const Dashboard = () => {
                   label="Amount"
                   placeholder="Enter amount"
                   type="text"
+                  className="flex-1 p-3 text-[16px] focus:outline-none lg:p-4 lg:text-base"
                   required={true}
                 />
                 <Button
