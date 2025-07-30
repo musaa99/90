@@ -10,7 +10,7 @@ import { WagerSchema, WagerValidation } from '@/libs/validations/auth';
 import { useRouter } from 'next/navigation';
 import { Card, CardContent } from '@/components/ui/card';
 
-const Dashboard = () => {
+const BookWager = () => {
   const router = useRouter();
 
   const form = useForm<WagerValidation>({
@@ -27,7 +27,7 @@ const Dashboard = () => {
 
   return (
     <>
-      <section className="flex h-[-webkit-fill-available] w-full flex-col items-center p-4">
+      <section className="flex h-[-webkit-fill-available] w-full flex-col items-center p-0">
         <Card className="w-full max-w-md text-sm">
           <CardContent className="space-y-4 p-2">
             <h1 className="text-center text-[24px] font-bold">Book Wager</h1>
@@ -85,4 +85,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default BookWager;

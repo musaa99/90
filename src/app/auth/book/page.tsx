@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: 'Welcome!',
 };
 
-const Onboarding = dynamic(() => import('@/screens/auth/onboarding'));
+const Onboarding = dynamic(() => import('@/layouts/dashboard/bookwager'));
 
 const OnboardingPage = () => <Onboarding />;
 

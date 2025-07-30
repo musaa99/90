@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: '',
 };
 
-const Dashboard = dynamic(() => import('../../screens/dashboard'));
+const Dashboard = dynamic(() => import('../../../layouts/dashboard/dashboard'));
 
 const DashboardPage = () => {
   return <Dashboard />;

@@ -1,10 +1,10 @@
 'use client';
 import { Button } from '@/components/ui/button';
-import Dashboard from '@/screens/dashboard';
+import BookWager from '@/layouts/dashboard/bookwager';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
-const Onboarding = () => {
+const Dashboard = () => {
   const router = useRouter();
 
   return (
@@ -18,10 +18,10 @@ const Onboarding = () => {
             Settle peer-to-peer bets on live sports events with in-play wagers
           </p>
         </div>
-        <Dashboard />
+        <BookWager />
 
         <Button
-          onClick={() => router.push('/dashboard')}
+          onClick={() => router.push('/bookwager')}
           className="rounded-full bg-blue-500 px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-blue-600 lg:px-8 lg:py-3 lg:text-base"
         >
           BOOK WAGER
@@ -76,4 +76,4 @@ const Onboarding = () => {
   );
 };
 
-export default Onboarding;
+export default Dashboard;
